@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7.2 - Lógica de Programação</title>
+</head>
+<body>
+    <script>
+        /*var livro = {
+            titulo: "Harry e o prisoneiro de Azkabhan",
+            autor: "J.K. Rowlling",
+            editora: "Rocco",
+            ano: "2017"
+        }
+
+        console.log(livro.titulo + livro.autor + livro.editora + livro.ano);
+        livro = livro.nap(obj => {
+            obj.titulo = true;
+            obj.ano = 1999;
+            return obj;
+        });
+
+        console.log(livro);*/
+
+      var n = prompt("Digite o nome do personagem: ");
+      var f = parseInt(prompt("Digite a força. -3 a +3"));
+      var d = parseInt(prompt("Digite a agilidade. -3 a +3"));
+      var a = parseInt(prompt("Digite a inteligência. -3 a +3"));
+      var i = parseInt(prompt("Digite a percepção. -3 a +3"));
+      var p = parseInt(prompt("Digite a destreza -3 a +3"));
+
+      var personagem={
+        nome: n,
+        forca: f,
+        destreza: d ,
+        inteligencia: i,
+        percepcao: p,
+        imprimeDados: function (){
+
+            document.write("<b>Nome<b/>"+this.nome+"<br>");
+            document.write("<b>Força<b/>"+this.forca+"<br>");
+            document.write("<b>Destreza:</b>"+this.destreza+"<br><br>");
+            document.write("<b>inteligencia:</b>"+this.inteligencia+"<br><br>");
+            document.write("<b> percepcao:</b>"+this.percepcao+"<br><br>");
+
+
+            personagem.imprimeDados()
+            var resposta = prompt("Desejar adicionar mais algum personagem? sim-1 não-2");
+
+        }
+        
+    }
+
+    personagem.imprimeDados()
+     
+
+
+    </script>
+</body>
+</html>

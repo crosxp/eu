@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <script>
+        // atividade 1 //
+        /*function divide(n1,n2) {
+
+            if(n2==0) {
+                document.write("VALOR INVÁLIDO!!!");
+            }else{
+                var resultado =n1/n2;
+                document.write(resultado);
+            }
+        }
+
+        var x = parseInt(prompt("Digite o valoor 1:"));
+        var y = parseInt(prompt("Digite o valoor 2:"));
+        
+        divide(x,y);*/
+
+        // atividade 2 //
+        /*function triângulo(x,y,z){
+            if(x==y && x==z) {
+                document.write("Triângulo Equilátero");
+            }else{
+                if((x==y && x!=z) || (y==x && y!=z) || (z==x && z!=y)) {
+                    document.write("Triângulo Isósceles");
+                }else{
+                    if((x!=y && x!=z) || (y!=x && y!=z) || (z!=x && z!=y)) {
+                        document.write("Triângulo Escaleno");
+                    }
+                }
+            }
+        }
+
+        var x = parseInt(prompt("Digite o valoor 1:"));
+        var y = parseInt(prompt("Digite o valoor 2:"));
+        var z = parseInt(prompt("Digite o valoor 3:"));
+        
+        triângulo(x,y,z);*/
+
+        // atividade 3 //
+       /* function calculaDesconto(ValorCompras) {
+            var percDesconto = 0;
+            var valorDesconto = 0;
+            var totalAPagar = 0;
+        
+            if(ValorCompras <= 500) {
+                percDesconto = 0.1;
+                valorDesconto = ValorCompras*percDesconto;
+                totalAPagar = ValorCompras - valorDesconto;
+            }else {
+                percDesconto = 0.15;
+                valorDesconto = ValorCompras*percDesconto;
+                totalAPagar = ValorCompras - valorDesconto;
+            }
+            
+            return [percDesconto,valorDesconto,totalAPagar]
+        }
+
+
+        var valores = calculaDesconto(450);
+        console.log(valores);
+
+        var mensagem = "Você recebeu"+valores[0]*100+"% de desconto. <br>";
+                mensagem += "Valor do desconto: "+valores[1]+"<br>";
+                mensagem += "Total a pagar"+valores[2];
+
+        document.write(mensagem);*/
+
+        // atividade 4 //
+        /*function caixa(valorGasto, opcaoPagamento) {
+            var nomeOpcao = "";
+            var totalAPagar = 0;
+            switch(opcaoPagamento) {
+                case 1:
+                    nomeOpcao = "À vista. 10% de desconto";
+                    totalAPagar = valorGasto - valorGasto*0.1;
+                    break;
+
+                case 2:
+                nomeOpcao = "Duas vezes. Sem juros.";
+                totalAPagar = valorGasto;
+                break;
+
+                case 3: 
+                    if(valorGasto > 100) {
+                        nomeOpcao = "A partir de 3 vezes. 3% de juros ao mês.<br>";
+                        var qtdParcelas = parseInt(prompt("Digite a quantidade de parcelas.")); 
+                        var valorJuros = valorGasto*0.03;
+                        totalAPagar = valorGasto + qtdParcelas*valorJuros;4
+                        document.write("Serão"+qtdParcelas+"de R$"+(valorGasto/qtdParcelas)+ valorJuros);
+                    }else{
+                        document.write("A opção 3 só é válida para compras acima de R$ 100,00.");
+                    }
+            }
+            document.write("Opção de pagamento: "+nomeOpcao+"<br> Total a pagar: "+totalAPagar);
+        }
+
+        caixa(600,3);*/
+
+        // atividade 7//
+        function buscaValor(lista, valorProcurado) {
+            var indice = lista.indexOF(valorProcurado);
+
+            if(indice == -1) {
+                document.write("Valor não existe dentro do array");
+            }else{
+                document.write("Valor existe dentro do array e está no indice"+indice+"!");
+            }
+        }
+
+        var idades = [6,89,23]
+        buscavalor(idades,5);
+
+    </script>
+</body>
+</html>

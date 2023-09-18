@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <script>
+        var codigo = parseInt(prompt("Digite o codigo:"));     
+        var quantidade = parseInt(prompt("Digite a quantidade"));
+        var total = 0;
+
+        switch(codigo) {
+            case 100:
+                document.write("Dogao do kakau. Preço: R$ 1,20");
+                total = 2*quantidade;
+                break;
+            case 101:
+                document.write("Bauru da beka. Preço: R$ 1,30");
+                total = 3*quantidade;
+                break;
+            case 102:
+                document.write("Doceria da Nick. Preço: R$ 1,50");
+                total = 5*quantidade;
+                break;
+            case 103:
+                document.write("Vale do Recife PP. Preço: R$ 1,20");
+                total = 6*quantidade;
+                break;
+            case 104:
+                document.write("Cannabica. Preço: R$ 1,30");
+                total = 7*quantidade;
+                break;
+            case 105:
+                document.write("Gladiores da tecnologia. Preço: R$ 1,00");
+                total = 8*quantidade;
+                break;
+
+            default:
+                document.write("Opção inválida!");
+        }
+
+        if(total > 0) {
+            document.write("<br>Total a pagar: R$"+total);
+        }
+    
+        if(codigo == 100) {
+            document.write("Dogao do kaukau ");
+            document.write("<br>");
+            document.write("preço é igual 1,20");          
+            total = 1.2*quantidade;
+            document.write("<br>");
+            document.write("Pastel de forno");
+            document.write("<br>");
+        }else{
+            if(codigo == 101){
+                document.write("Bauru da beka");
+                document.write("<br>");
+                document.write("preço é igual 1,30");            
+                total = 1.3*quantidade;
+                document.write("<br>");
+                document.write("Empada de Frango");
+                document.write("<br>");
+
+            }else{
+                if(codigo == 102){
+                document.write("Doceria da Nick");
+                document.write("<br>");
+                document.write("preço é igual 1,50");             
+                total = 1.4*quantidade;
+                document.write("<br>");
+                document.write("Rímel, Batom e Cílios postiço");
+                document.write("<br>");
+                }else{
+                if(codigo == 103){
+                document.write("Vale do Recife PP"); 
+                document.write("<br>");
+                document.write(" preço é igual 1,20");             
+                total = 1.5*quantidade;
+                document.write("<br>");  
+                document.write("Livros com teor Político");
+                document.write("<br>");
+                 }else{
+                    if(codigo == 104){
+                        document.write("Cannabica");
+                        document.write("<br>");
+                        document.write("o preço é igual 1,30");                   
+                        total = 1.6*quantidade;
+                        document.write("<br>");
+                        document.write("Rémedios");
+                        document.write("<br>");
+                    }else{
+                        if(codigo == 105)
+                        document.write("Gladiores da tecnologia");
+                        document.write("<br>");
+                        document.write("o preço é igual 1,00");                   
+                        total = 1.7*quantidade;
+                        document.write("<br>");
+                        document.write("Sessões de terápia");
+                        document.write("<br>");
+                    }
+
+                }
+              }               
+            }  
+          }
+        document.write("Total a pagar: R$"+total);  
+    </script>
+ </body>
+</html>
+
